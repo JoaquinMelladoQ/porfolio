@@ -1,10 +1,81 @@
 
+body {
+    font-family: 'Courier Prime', monospace;
+}
+
+
+
+/* Navbar */
 .navbar {
     background-color: #394053;
+    color: #ffffff;
     font-family: 'Courier Prime', monospace;
     font-weight: 400;
+    width: 100vw;
 }
+
+a {
+    color: #ffffff;
+}
+
+/* Header */
 
 header img {
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56vw;
+}
+
+header h1,
+header h2 {
+    display: block;
+    margin-top: -200px;
+    color: #FDECEF;
+    text-shadow: 0em 0.125em 0em #282F44;
+    font-size: 45px;
+}
+
+header h1 {
+    font-weight: 700;
+    color: #FDECEF;
+}
+
+
+.hero-section h1,
+.hero-section h2 {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+      
+}
+@keyframes slidein {
+    from {
+        margin-right: 100%;
+        width: 300%
+}
+          
+    to {
+        margin-left: 0%;
+        width: 100%;
+        }
+}
+
+
+/* Description-section*/
+
+#description-section {
+    margin-top: 100px;
+}
+
+
+#carouselExampleControls {
+    width: 40%;
+}
+
+/* Paragraph-section */
+
+#paragraph-section {
+    margin-top: 100px;
 }
