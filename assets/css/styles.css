@@ -3,6 +3,10 @@ body {
     font-family: 'Courier Prime', monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 
 
 /* Navbar */
@@ -64,10 +68,11 @@ header h1 {
 }
 
 
-/* Description-section */
+/* About-section */
 
-#description-section {
-    margin-top: 100px;
+#about-section {
+    margin-top: 0px;
+    padding-top: 100px;
 }
 
 
@@ -80,7 +85,23 @@ header h1 {
 
 /* My experience section */
 #my-experience {
-    padding-left: 20%;
+    padding-left: 50px;
+    padding-top: 80px;
+}
+
+/* Carousel */
+
+
+.carousel-item img{
+    width: 233px;
+    height: 170px;
+}
+
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1D3461;
 }
 
 .font-awesome {
@@ -89,6 +110,7 @@ header h1 {
 }
 
 /* Button */
+
 .btn {
     background-color: #1D3461;
     color: #FDECEF;
@@ -117,6 +139,7 @@ header h1 {
 .bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {
     border-right-color: #324376 !important;
 }
+
 
 /* My works section */
 

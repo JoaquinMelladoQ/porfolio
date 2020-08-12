@@ -4,7 +4,7 @@
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico">
-        <title>Portfolio</title>
+        <title>{Joaquín Mellado}</title>
 
         <!--CSS de Bootstrap 4-->
         <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
@@ -18,23 +18,23 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg position-fixed text-white">
-            <a class="navbar-brand mx-5 pl-5" href="#">Joaquín Mellado</a>
+            <a class="navbar-brand mx-5 pl-5" href="#">{Joaquín Mellado}</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse mx-5" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#about-section">[About]<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Experience</a>
+                  <a class="nav-link" href="#my-experience">[Experience]</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Works</a>
+                  <a class="nav-link" href="#my-works">[Works]</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact-section">[Contact]</a>
                   </li>
               </ul>
             </div>
@@ -44,12 +44,12 @@
               <header class="hero-section">
                   <img src="/assets/img/stanley-dai-73OZYNjVoNI-unsplash.jpg" alt="">
                   <h1 class="h1-hero d-block text-center">Hi, welcome to my website!</h1>
-                  <h2 class="h2-hero text-center mt-4">I am a full stack Developer</h2>
+                  <h2 class="h2-hero text-center mt-4">I am a Full-Stack Developer</h2>
               </header>
           </main>
 
-          <section id="description-section" class="container">
-            <article>
+          <section class="container pt-5">
+            <article id="about-section">
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla, dolores autem similique dolor magni laudantium quidem, veritatis voluptate animi sapiente nobis, tempore neque excepturi. Error unde impedit recusandae reprehenderit?</p>
             </article>
           </section>
@@ -78,14 +78,14 @@
           </section>
 
           <section id="my-experience">
-            <div class="container py-5 d-flex">
+            <div class="container py-5 d-md-block">
               <button 
               type="button" 
               class="btn"
               data-toggle="tooltip" 
               data-placement="top"
-              title="Technologies that i've been using">
-                Experience
+              title="Technologies that i've been using: Html-CSS-JS-Bootstrap-JQuery-React">
+                [Experience]
               </button>
             </div>
             <div class="font-awesome"">
@@ -97,14 +97,65 @@
                 <i class="fab fa-angular"></i>
               </ul>
             </div>
+            <div id="carouselExampleIndicators" class="carousel slide container d-none d-md-block px-5 py-5" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/img/meet_coffee.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="assets/img/cuppon.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="assets/img/dmark.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="assets/img/ricomida.png" alt="">
+                        </div>
+                    </div>
+                </div>
+  
+  
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/img/iguana_page.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="assets/img/meet_coffee.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="assets/img/ricomida.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="assets/img/cuppon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+              </div>
+           </div>
           </section>
 
           <section id="my-works" class="container-fluid py-5 px-5">
-            <div class="row">
-              <h2>Works</h2>
+            <div class="row px-5 pb-5">
+              <div class="container py-5">
+                <button 
+                type="button" 
+                class="btn"
+                data-toggle="tooltip" 
+                data-placement="right"
+                title="In this section you can see more detail about my work. Those are an example">
+                  [Works]
+                </button>
+              </div>
               <div class="card-group">
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="assets/img/iguana_page.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -112,7 +163,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="assets/img/suricata.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -120,7 +171,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="assets/img/meet_coffee.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -130,7 +181,7 @@
               </div>
               <div class="card-group">
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="assets/img/cuppon.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -138,7 +189,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="assets/img/ricomida.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -146,7 +197,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="assets/img/dmark.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -154,18 +205,37 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </section>
 
-          <section>
-            <h3>Contact</h3>
+          <section id="contact-section">
+            <div class="container py-5">
+              <button 
+              type="button" 
+              class="btn"
+              data-toggle="tooltip" 
+              data-placement="bottom"
+              title="Let's keep in touch. Send me a messege, i'll respond as soon as I can">
+                [Contact]
+              </button>
+            </div>
             <div class="typeform-widget" data-url="https://form.typeform.com/to/dBGlKQxD" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=dBGlKQxD&utm_source=typeform.com-01EFHVZEEZT0FRM1PCK7M486ME-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
           </section>
 
 
-          <footer>
-            <h2>Joaquín Mellado</h2> 
+          <footer class="d-flex">
+            <div class="footer-font-awesome"">
+              <ul class="py-5">
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-angular"></i>
+              </ul>
+            </div>
+            <div>
+              <h2>{Joaquín Mellado}</h2> 
+            </div>
           </footer>
 
 
