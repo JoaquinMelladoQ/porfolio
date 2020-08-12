@@ -41,7 +41,7 @@ header h1 {
     color: #FDECEF;
 }
 
-
+/* Animation */
 .hero-section h1,
 .hero-section h2 {
     animation-duration: 1.5s;
@@ -50,6 +50,7 @@ header h1 {
     animation-direction: alternate;
       
 }
+
 @keyframes slidein {
     from {
         margin-right: 100%;
@@ -63,19 +64,74 @@ header h1 {
 }
 
 
-/* Description-section*/
+/* Description-section */
 
 #description-section {
     margin-top: 100px;
 }
 
 
-#carouselExampleControls {
-    width: 40%;
-}
-
 /* Paragraph-section */
 
 #paragraph-section {
     margin-top: 100px;
+}
+
+
+/* My experience section */
+#my-experience {
+    padding-left: 20%;
+}
+
+.font-awesome {
+    font-size: 85px;
+    padding-left: 10%;
+}
+
+/* Button */
+.btn {
+    background-color: #1D3461;
+    color: #FDECEF;
+    font-size: 40px;
+}
+
+
+/* Tooltip */
+.tooltip-inner{
+    font-family: 'Chilanka', cursive;
+    background-color: #324376;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 50%;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #324376 !important;
+}
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+    border-top-color: #324376 !important;
+}
+.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before {
+    border-left-color: #324376 !important;
+}
+.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {
+    border-right-color: #324376 !important;
+}
+
+/* My works section */
+
+#my-works {
+    background-color: #394053;
+    color: #ffffff;
+}
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #394053;
+    color: #ffffff;
 }
