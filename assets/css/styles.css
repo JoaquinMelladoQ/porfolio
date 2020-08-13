@@ -24,16 +24,32 @@ html {
 }
 
 .navbar-toggler {
-    border-color: #FDECEF;
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    color: black!important;
+    border: 1px solid #FDECEF;
+    border-radius: 1.25rem;
 }
 
 .navbar-toggler-icon {
-    color: #FDECEF;
+    width: 1.5em;
+    height: 1.5em;
+    background: #FDECEF;
+    border-radius: 50%;
+    filter: blur(3px);
 }
 
-a {
+
+nav a {
     background-color:#394053; 
     color: #FDECEF;
+}
+nav a:hover {
+    background-color:#394053; 
+    color: #FDECEF;
+    filter: blur(1px)
 }
 
 /* Main-section */
@@ -68,6 +84,7 @@ header h2 {
 
 
 /* Animation */
+
 .hero-section h1,
 .hero-section h2 {
     animation-duration: 1.5s;
@@ -89,10 +106,13 @@ header h2 {
         }
 }
 
+
+/* Media Queries */
+
 @media (max-width: 600px) {
     .hero-texto h1,
     .hero-texto h2 {
-    font-size: 15px;
+    font-size: 21px;
     }
 }
 
@@ -111,7 +131,7 @@ header h2 {
 
 @media (max-width: 600px) {
     .hero-texto {
-        padding-top: 200px;
+        padding-top: 100px;
     }
 }
 
@@ -128,9 +148,44 @@ header h2 {
 
 @media (max-width: 600px) {
     .hero-section {
-        height: 66vw;
+        height: 150vw;
     }
 }
+
+@media (max-width: 600px) {
+    .hero-section {
+        background-position-x: 49%;
+    }
+}
+
+@media (max-width: 600px) {
+    #my-experience {
+        padding-top: 0px;
+        margin-top: 0px;
+        height: 679px;
+    }
+}
+@media (max-width: 600px) {
+    .pt-5, .py-5 {
+        padding-top: 2rem!important;
+    }
+}
+@media (max-width: 600px) {
+    .pb-5, .py-5 {
+        padding-bottom: 3rem!important;
+    }
+}
+/*@media (max-width: 600px) {
+    .pt-5 {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .py-5 {
+        padding-bottom: 0px;
+    }
+}*/
 
 
 /* About-section */
