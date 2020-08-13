@@ -1,49 +1,71 @@
 
-body {
+body * {
     font-family: 'Courier Prime', monospace;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    border: 0px;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 
 
 /* Navbar */
 .navbar {
     background-color: #394053;
-    color: #ffffff;
+    color: #FDECEF;
     font-family: 'Courier Prime', monospace;
     font-weight: 400;
-    width: 100vw;
+    width: 100%;
+    height: 60px;
+}
+
+.navbar-toggler {
+    border-color: #FDECEF;
+}
+
+.navbar-toggler-icon {
+    color: #FDECEF;
 }
 
 a {
-    color: #ffffff;
+    background-color:#394053; 
+    color: #FDECEF;
 }
 
-/* Header */
+/* Main-section */
 
-header img {
-    width: 100%;
+.hero-section {
+    display: inline-block;
+    background-image: url('/assets/img/stanley-dai-73OZYNjVoNI-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 0px;
+    color: #FDECEF;
+    text-shadow: 0em 0.125em 0em #282F44;
+    width: 100%;
     height: 56vw;
+}
+
+.hero-texto {
+    padding-top: 185px;
+    padding-right: 3%;
+    font-size: 30%;
 }
 
 header h1,
 header h2 {
-    display: block;
-    margin-top: -200px;
-    color: #FDECEF;
-    text-shadow: 0em 0.125em 0em #282F44;
-    font-size: 45px;
-}
-
-header h1 {
     font-weight: 700;
     color: #FDECEF;
+    margin-bottom: 0.25em;
+    padding-bottom: 0.25em;
+    display: inline-block;
 }
+
+
 
 /* Animation */
 .hero-section h1,
@@ -67,6 +89,49 @@ header h1 {
         }
 }
 
+@media (max-width: 600px) {
+    .hero-texto h1,
+    .hero-texto h2 {
+    font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-texto h1,
+    .hero-texto h2 {
+        background-color: transparent;
+        }
+}
+@media (max-width: 600px) {
+    .hero-texto h1,
+    .hero-texto h2 {
+        width: 100%;
+        }
+}
+
+@media (max-width: 600px) {
+    .hero-texto {
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .my-4 {
+        margin-top: -0.5rem!important;
+    }
+}
+@media (max-width: 600px) {
+    .mt-4 {
+        margin-top: -0.5rem!important;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        height: 66vw;
+    }
+}
+
 
 /* About-section */
 
@@ -85,8 +150,8 @@ header h1 {
 
 /* My experience section */
 #my-experience {
-    padding-left: 50px;
-    padding-top: 80px;
+    padding-left: 0px;
+    padding-top: 0px;
 }
 
 /* Carousel */
@@ -115,6 +180,7 @@ header h1 {
     background-color: #1D3461;
     color: #FDECEF;
     font-size: 40px;
+    padding: 0px;
 }
 
 
@@ -122,8 +188,9 @@ header h1 {
 .tooltip-inner{
     font-family: 'Chilanka', cursive;
     background-color: #324376;
-    color: #ffffff;
-    font-size: 13px;
+    color: #FDECEF;
+    font-size: 15px;
+    padding: 10px;
     border-radius: 50%;
 }
 
