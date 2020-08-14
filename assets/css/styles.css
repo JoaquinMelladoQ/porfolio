@@ -227,8 +227,8 @@ header h2 {
 }
 
 .carousel-indicators li{
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: #1D3461;
 }
@@ -294,13 +294,18 @@ header h2 {
     background-color: #394053;
     color: #000000;
 }
-
+.card {
+    margin: 20px;
+}
 .card h5,
 .card p {
     font-family: 'Chilanka', cursive;
     font-size: 100%;
 }
 
+.card-total {
+    padding-bottom: 150px;
+}
 
 
 /* Footer */
