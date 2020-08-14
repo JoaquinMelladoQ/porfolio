@@ -87,6 +87,16 @@ header h2 {
 }
 
 
+.horizontal-row-body {
+    height: 2px;
+    width: 115px;
+    background-color: black;
+    text-align: -webkit-center;
+}
+.pb-5, .py-5 {
+    padding-bottom: 1rem!important;
+
+}
 
 /* Animation */
 
@@ -206,6 +216,10 @@ header h2 {
 
 /* Carousel */
 
+#carouselExampleIndicators {
+    padding-bottom: 3rem!important;
+}
+
 
 .carousel-item img{
     width: 233px;
@@ -219,10 +233,14 @@ header h2 {
     background-color: #1D3461;
 }
 
+
+/* Font Awesome experience */
 .font-awesome-experience {
     font-size: 85px;
     padding-left: 0%;
     color: #1D3461;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .font-awesome-experience:hover {
@@ -233,6 +251,7 @@ header h2 {
     font-size: 20%;
     font-family: 'Chilanka', cursive;
 }
+
 
 
 /* Button */
