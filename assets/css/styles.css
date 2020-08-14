@@ -95,8 +95,34 @@ header h2 {
 }
 .pb-5, .py-5 {
     padding-bottom: 1rem!important;
+}
+
+.hero-texto-dos h1 {
+    font-family: 'Chilanka', cursive;
+    color: #22333B;
+    font-weight: bolder;
+    font-size: 107px;
+    padding-top: 50px;
+    text-shadow: 0em 0em 0.125em #FDECEF;
 
 }
+
+.hero-texto-dos h2 {
+    font-family: 'Chilanka', cursive;
+    font-weight: bolder;
+    font-size: 107px;
+    color: #22333B;
+    text-shadow: 0.125em 0em 0.125em #FDECEF;
+    padding-top: 50px;
+}
+
+.horizontal-row-main {
+    height: 2px;
+    width: 450px;
+    background-color: black;
+    text-align: -webkit-center;
+}
+
 
 /* Animation */
 
@@ -192,6 +218,184 @@ header h2 {
 }
 
 
+
+/* Media Queries main-section */
+@media (max-width: 700px) {
+    .hero-texto-dos h1 {
+        font-size: 60px;
+        padding-top: 105px;
+    }
+}
+@media (max-width: 700px) {
+    .hero-texto-dos h2 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .horizontal-row-main {
+        width: 250px;
+    }
+}
+
+
+/* Media Queries for ipad pro */
+@media (max-width: 650px) {
+    .hero-texto-dos h1 {
+        font-size: 60px;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 650px) {
+    .hero-texto-dos h2 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .horizontal-row-main {
+        width: 250px;
+    }
+}
+
+
+/* Media Queries for ipad PRO*/
+@media all and (max-width: 1050px) {
+    .hero-texto-dos h1 {
+        font-size: 50px;
+        padding-top: 150px;
+    }
+}
+@media (max-width: 1050px) {
+    .hero-texto-dos h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .horizontal-row-main {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .hero-texto h1,
+    .hero-texto h2 {
+    font-size: 21px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .hero-texto {
+        padding-top: 100px;
+    }
+}
+
+
+/* Media queries for Iphone 6/7/8*/
+@media (max-width: 420px) {
+    .hero-texto-dos h1 {
+        font-size: 40px;
+        padding-top: 190px;
+    }
+}
+@media (max-width: 420px) {
+    .hero-texto-dos h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .horizontal-row-main {
+        width: 170px;
+    }
+}
+
+@media (max-width: 420px) {
+    .h1-hero {
+        padding-top: 30px;
+    }
+}
+
+
+
+/* Media queries for Iphone 5*/
+@media (max-width: 360px) {
+    .hero-texto h1,
+    .hero-texto h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero-texto-dos h1 {
+        font-size: 40px;
+        padding-top: 90px;
+    }
+}
+@media (max-width: 380px) {
+    .hero-texto-dos h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 380px) {
+    .horizontal-row-main {
+        width: 100px;
+    }
+}
+
+/* Navbar Media queries for Iphone 5*/
+
+@media (max-width: 380px) {
+    .navbar-brand {
+        font-size: 15px!important;
+    }
+}
+
+
+
+
+/*Media queries for Ipad*/
+@media all and (max-width: 800px) {
+    .hero-texto-dos h1 {
+        font-size: 30px;
+        padding-top: 45px;
+    }
+}
+@media all and (max-width: 800px) {
+    .hero-texto-dos h2 {
+        font-size: 30px;
+        padding-top: 45px;
+    }
+}
+@media (max-width: 1050px) {
+    .hero-texto-dos h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .horizontal-row-main {
+        width: 165px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .hero-texto h1,
+    .hero-texto h2 {
+    font-size: 17px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .hero-texto {
+        padding-top: 100px;
+    }
+}
+
+
+
 /* About-section */
 
 #about-section {
@@ -214,6 +418,7 @@ header h2 {
 }
 
 
+
 /* Carousel */
 
 #carouselExampleIndicators {
@@ -232,6 +437,7 @@ header h2 {
     border-radius: 50%;
     background-color: #1D3461;
 }
+
 
 
 /* Font Awesome experience */
