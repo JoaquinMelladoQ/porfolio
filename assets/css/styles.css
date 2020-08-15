@@ -98,28 +98,26 @@ header h2 {
 }
 
 .hero-texto-dos h1 {
-    font-family: 'Chilanka', cursive;
-    color: #22333B;
+    color:#FDECEF;
     font-weight: bolder;
-    font-size: 107px;
+    font-size: 80px;
     padding-top: 50px;
-    text-shadow: 0em 0em 0.125em #FDECEF;
+    text-shadow: 0em 0em 0.125em #000000;
 
 }
 
 .hero-texto-dos h2 {
-    font-family: 'Chilanka', cursive;
     font-weight: bolder;
-    font-size: 107px;
-    color: #22333B;
-    text-shadow: 0.125em 0em 0.125em #FDECEF;
+    font-size: 80px;
+    color: #FDECEF;
+    text-shadow: 0.125em 0em 0.125em #000000;
     padding-top: 50px;
 }
 
 .horizontal-row-main {
-    height: 2px;
+    height: 1px;
     width: 450px;
-    background-color: black;
+    background-color: #FDECEF;
     text-align: -webkit-center;
 }
 
@@ -189,7 +187,7 @@ header h2 {
 
 @media (max-width: 600px) {
     .hero-section {
-        height: 150vw;
+        height: 178vw;
     }
 }
 
@@ -359,14 +357,14 @@ header h2 {
 /*Media queries for Ipad*/
 @media all and (max-width: 800px) {
     .hero-texto-dos h1 {
-        font-size: 30px;
-        padding-top: 45px;
+        font-size: 45px;
+        padding-top: 125px;
     }
 }
 @media all and (max-width: 800px) {
     .hero-texto-dos h2 {
         font-size: 30px;
-        padding-top: 45px;
+        padding-top: 30px;
     }
 }
 @media (max-width: 1050px) {
@@ -391,6 +389,26 @@ header h2 {
 @media (max-width: 1050px) {
     .hero-texto {
         padding-top: 100px;
+    }
+}
+
+
+
+/* Media queries for footer-section*/
+
+@media (max-width: 500px) {
+    .ul-footer  {
+        padding-top: 0px!important;
+    }
+}
+@media (max-width: 450px) {
+    .brand-footer h2  {
+        padding-top: 60px!important;
+    }
+}
+@media (max-width: 450px) {
+    .brand-footer h2  {
+        padding-bottom: 6px!important;
     }
 }
 
@@ -534,7 +552,7 @@ header h2 {
 
 .brand-footer h2 {
     padding-top: 85px;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
 }
 
