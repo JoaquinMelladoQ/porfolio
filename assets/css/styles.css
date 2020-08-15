@@ -16,6 +16,7 @@ html {
 /* Navbar */
 .navbar {
     background-color: #394053;
+    background-image: linear-gradient(60deg, black, #030324, black);
     color: #FDECEF;
     font-family: 'Courier Prime', monospace;
     font-weight: 400;
@@ -47,12 +48,12 @@ html {
 
 
 nav a {
-    background-color:#394053; 
+    background-image: linear-gradient(60deg, black, #030324, black);
     color: #FDECEF;
 }
 
 nav a:hover {
-    background-color:#394053; 
+    background-color: transparent; 
     color: #FDECEF;
     filter: blur(1px)
 }
@@ -124,25 +125,187 @@ header h2 {
 
 /* Animation */
 
-.hero-section h1,
-.hero-section h2 {
-    animation-duration: 1.5s;
+.hero-texto h1,
+.hero-texto h2 {
+    animation-duration: 1.8s;
     animation-name: slidein;
     animation-iteration-count: 2;
-    animation-direction: alternate;
-      
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0, 1, 1, 2);
+         
 }
-
 @keyframes slidein {
     from {
-        margin-right: 100%;
-        width: 300%
+        margin-left: 50%;
+        width: 500%
 }
           
     to {
-        margin-left: 0%;
-        width: 100%;
+        margin-left: 60%;
+        width: 0%;
         }
+}
+
+
+
+
+/* About-section */
+#about-section {
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+
+/* Paragraph-section */
+#paragraph-section {
+    margin-top: 100px;
+}
+
+
+/* My experience section */
+#my-experience {
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+
+
+/* Carousel */
+
+#carouselExampleIndicators {
+    padding-bottom: 3rem!important;
+}
+
+
+.carousel-item img{
+    width: 233px;
+    height: 170px;
+}
+
+.carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1D3461;
+}
+
+
+
+/* Font Awesome experience */
+.font-awesome-experience {
+    font-size: 85px;
+    padding-left: 0%;
+    color: #1D3461;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.font-awesome-experience:hover {
+    filter: blur(1px);
+}
+
+.font-awesome-experience h2 {
+    font-size: 20%;
+    font-family: 'Chilanka', cursive;
+}
+
+
+
+/* Button */
+
+.btn {
+    background-color: #1D3461;
+    color: #FDECEF;
+    font-size: 40px;
+    padding: 0px;
+}
+
+
+/* Tooltip */
+.tooltip-inner{
+    font-family: 'Chilanka', cursive;
+    background-color: #324376;
+    color: #FDECEF;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #324376 !important;
+}
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+    border-top-color: #324376 !important;
+}
+.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before {
+    border-left-color: #324376 !important;
+}
+.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {
+    border-right-color: #324376 !important;
+}
+
+
+/* My works section */
+
+#my-works {
+    background-image: linear-gradient(60deg, black, #030324, black);
+    color: #000000;
+}
+.card {
+    margin: 20px;
+}
+.card h5,
+.card p {
+    font-family: 'Chilanka', cursive;
+    font-size: 100%;
+}
+
+.card-total {
+    padding-bottom: 150px;
+}
+
+
+/* Footer */
+.footer-font-awesome {
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(60deg, black, #030324, black);
+    color: #FDECEF;
+}
+
+.footer-font-awesome .fab {
+    color: #FDECEF;
+}
+
+.ul-footer {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.brand-footer h2 {
+    padding-top: 85px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.brand-footer a {
+    color: #FDECEF;
+    text-decoration: none;
+}
+
+.brand-footer a h2:hover {
+    filter: blur(1px);
+}
+
+.ul-footer ul i:hover {
+    filter: blur(1px);
+}
+
+#name{
+    position: relative;
+}
+#iam{
+    position: relative;
 }
 
 
@@ -411,163 +574,5 @@ header h2 {
         padding-bottom: 6px!important;
     }
 }
-
-
-
-/* About-section */
-
-#about-section {
-    margin-top: 0px;
-    padding-top: 100px;
-}
-
-
-/* Paragraph-section */
-
-#paragraph-section {
-    margin-top: 100px;
-}
-
-
-/* My experience section */
-#my-experience {
-    padding-left: 0px;
-    padding-top: 0px;
-}
-
-
-
-/* Carousel */
-
-#carouselExampleIndicators {
-    padding-bottom: 3rem!important;
-}
-
-
-.carousel-item img{
-    width: 233px;
-    height: 170px;
-}
-
-.carousel-indicators li{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #1D3461;
-}
-
-
-
-/* Font Awesome experience */
-.font-awesome-experience {
-    font-size: 85px;
-    padding-left: 0%;
-    color: #1D3461;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.font-awesome-experience:hover {
-    filter: blur(1px);
-}
-
-.font-awesome-experience h2 {
-    font-size: 20%;
-    font-family: 'Chilanka', cursive;
-}
-
-
-
-/* Button */
-
-.btn {
-    background-color: #1D3461;
-    color: #FDECEF;
-    font-size: 40px;
-    padding: 0px;
-}
-
-
-/* Tooltip */
-.tooltip-inner{
-    font-family: 'Chilanka', cursive;
-    background-color: #324376;
-    color: #FDECEF;
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
-    border-bottom-color: #324376 !important;
-}
-.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
-    border-top-color: #324376 !important;
-}
-.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before {
-    border-left-color: #324376 !important;
-}
-.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {
-    border-right-color: #324376 !important;
-}
-
-
-/* My works section */
-
-#my-works {
-    background-color: #394053;
-    color: #000000;
-}
-.card {
-    margin: 20px;
-}
-.card h5,
-.card p {
-    font-family: 'Chilanka', cursive;
-    font-size: 100%;
-}
-
-.card-total {
-    padding-bottom: 150px;
-}
-
-
-/* Footer */
-
-.footer-font-awesome {
-    width: 100%;
-    height: 200px;
-    background-color: #394053;
-    color: #FDECEF;
-}
-
-.footer-font-awesome .fab {
-    color: #FDECEF;
-}
-
-.ul-footer {
-    padding-top: 80px;
-    text-align: center;
-}
-
-.brand-footer h2 {
-    padding-top: 85px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.brand-footer a {
-    color: #FDECEF;
-    text-decoration: none;
-}
-
-.brand-footer a h2:hover {
-    filter: blur(1px);
-}
-
-.ul-footer ul i:hover {
-    filter: blur(1px);
-}
-
 
 
